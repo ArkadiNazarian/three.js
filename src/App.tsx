@@ -24,7 +24,7 @@ function App() {
       {/* {
         v && <Three stl={v}/>
       } */}
-      <Three stl="https://s3.amazonaws.com/minifactory-stl/WALLY_1plate.stl" />
+      <Three stl="https://d.staging.layers.app/stl/6536819982df3d65319a3f3f/stl/a7ed796f-e9c8-4b4c-ab12-617bb6fdddb8.stl" />
       <input type='file' onChange={(e) => handlechange(e)} title='upload' />
     </div>
   );
