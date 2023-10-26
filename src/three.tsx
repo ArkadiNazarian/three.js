@@ -54,24 +54,6 @@ export const Three = (props: { stl: string }) => {
     const canvasRef = useRef(null);
     const [ratio, set_ratio] = useState(1)
 
-
-    const meshRef = useRef(null);
-
-    let material = new THREE.MeshLambertMaterial({ color: "ffffff" });
-    // "https://s3.amazonaws.com/minifactory-stl/WALLY_1plate.stl"
-
-    let geometry = useLoader(STLLoader, props.stl).center();
-
-    useEffect(() => {
-        const xSize = geometry.boundingBox!.max.x;
-        const ySize = geometry.boundingBox!.max.y;
-        const zSize = geometry.boundingBox!.max.z;
-        let maxSizeHelper = Math.max(xSize, ySize, zSize);
-        geometry.scale(2 / maxSizeHelper, 2 / maxSizeHelper, 2 / maxSizeHelper);
-        set_ratio((2 * ratio) / maxSizeHelper);
-
-    }, [props])
-
     return (
         <div
             ref={canvasRef}
