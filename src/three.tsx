@@ -9,7 +9,7 @@ import { STLExporter } from 'three/examples/jsm/exporters/STLExporter';
 const Model = (props: { selectedStl: string; ratio: number; set_ratio: any; }) => {
     const meshRef = useRef(null);
 
-    let material = new THREE.MeshLambertMaterial({ color: "ffffff" });
+    let material = new THREE.MeshLambertMaterial({ color: "#ffffff" });
     // "https://s3.amazonaws.com/minifactory-stl/WALLY_1plate.stl"
 
     let geometry = useLoader(STLLoader, props.selectedStl).center();
