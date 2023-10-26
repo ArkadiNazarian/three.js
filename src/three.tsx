@@ -12,7 +12,7 @@ const Model = (props: { selectedStl: string; ratio: number; set_ratio: any; }) =
     let material = new THREE.MeshLambertMaterial({ color: "ffffff" });
     // "https://s3.amazonaws.com/minifactory-stl/WALLY_1plate.stl"
 
-    let geometry = useLoader(STLLoader, '/e.stl').center();
+    let geometry = useLoader(STLLoader, props.selectedStl).center();
 
     useEffect(() => {
         const xSize = geometry.boundingBox!.max.x;
