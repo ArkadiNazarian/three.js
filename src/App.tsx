@@ -24,7 +24,7 @@ function App() {
       {/* {
         v && <Three stl={v}/>
       } */}
-      <Three stl="https://firebasestorage.googleapis.com/v0/b/dgenius-fd899.appspot.com/o/image%2Fe.stl?alt=media&token=30879c73-c6be-44da-87e8-cab8f8ab833f&_gl=1*71e2ln*_ga*MjA0MjIwNTEwMi4xNjc2ODI0ODky*_ga_CW55HF8NVT*MTY5ODMzMjg1OS44MS4xLjE2OTgzMzMwODEuNDUuMC4w" />
+      <Three stl="https://s3.amazonaws.com/minifactory-stl/WALLY_1plate.stl" />
       <input type='file' onChange={(e) => handlechange(e)} title='upload' />
     </div>
   );
