@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { Three } from './three';
+import ASD from './newthree';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       } */}
       <Three stl="https://s3.amazonaws.com/minifactory-stl/WALLY_1plate.stl" />
       <input type='file' onChange={(e) => handlechange(e)} title='upload' />
+      <ASD/>
     </div>
   );
 }
